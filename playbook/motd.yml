@@ -1,1 +1,7 @@
 ---
+    - hosts: all
+      vars:
+        MOTD:
+          
+      roles:
+        - { role: motd, tags: [ 'motd' ], _motd: "{{ MOTD }}" }
